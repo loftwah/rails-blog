@@ -1,3 +1,17 @@
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
+
+- [My Rails Tutorial](#my-rails-tutorial)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+  - [Add a route](#add-a-route)
+  - [Autoloading](#autoloading)
+  - [Generate a model](#generate-a-model)
+  - [List all of our articles](#list-all-of-our-articles)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 # My Rails Tutorial
 
 This project is to teach myself Ruby on Rails. I am using Ubuntu in WSL2 (Windows Subsystem for Linux 2) and Ruby 2.7. This project requires Ruby and SQLite3. I will be using [this](https://guides.rubyonrails.org/getting_started.html) guide to get started.
