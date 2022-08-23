@@ -8,14 +8,13 @@ This project is to teach myself Ruby on Rails. I am using Ubuntu in WSL2 (Window
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [My Rails Tutorial](#my-rails-tutorial)
-  - [Installation](#installation)
-  - [Running the Application](#running-the-application)
-  - [Add a route](#add-a-route)
-  - [Autoloading](#autoloading)
-  - [Generate a model](#generate-a-model)
-  - [List all of our articles](#list-all-of-our-articles)
-  - [Show a single article](#show-a-single-article)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
+- [Add a route](#add-a-route)
+- [Autoloading](#autoloading)
+- [Generate a model](#generate-a-model)
+- [List all of our articles](#list-all-of-our-articles)
+- [Show a single article](#show-a-single-article)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
