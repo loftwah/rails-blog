@@ -197,6 +197,8 @@ Article.all
 
 ## List all of our articles
 
+![List Articles](blog-articles.png)
+
 Add the following to the `app/controllers/articles_controller.rb` file.
 
 ```ruby
@@ -222,6 +224,8 @@ Add the following to the `app/views/articles/index.html.erb` file.
 ```
 
 ## Show a single article
+
+![Read Article](read-article.png)
 
 Add the following to the `config/routes.rb` file.
 
