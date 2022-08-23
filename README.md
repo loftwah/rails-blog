@@ -8,12 +8,14 @@ This project is to teach myself Ruby on Rails. I am using Ubuntu in WSL2 (Window
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Installation](#installation)
-- [Running the Application](#running-the-application)
-- [Add a route](#add-a-route)
-- [Autoloading](#autoloading)
-- [Generate a model](#generate-a-model)
-- [List all of our articles](#list-all-of-our-articles)
+- [My Rails Tutorial](#my-rails-tutorial)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+  - [Add a route](#add-a-route)
+  - [Autoloading](#autoloading)
+  - [Generate a model](#generate-a-model)
+  - [List all of our articles](#list-all-of-our-articles)
+  - [Show a single article](#show-a-single-article)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -194,3 +196,78 @@ Article.all
 ```
 
 ## List all of our articles
+
+Add the following to the `app/controllers/articles_controller.rb` file.
+
+```ruby
+class ArticlesController < ApplicationController
+  def index
+    @articles = Article.all
+  end
+end
+```
+
+Add the following to the `app/views/articles/index.html.erb` file.
+
+```erb
+<h1>Articles</h1>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <%= article.title %>
+    </li>
+  <% end %>
+</ul>
+```
+
+## Show a single article
+
+Add the following to the `config/routes.rb` file.
+
+```ruby
+Rails.application.routes.draw do
+  root "articles#index"
+
+  get "/articles", to: "articles#index"
+  get "/articles/:id", to: "articles#show"
+end
+```
+
+Add the following to the `app/controllers/articles_controller.rb` file.
+
+```ruby
+class ArticlesController < ApplicationController
+  def index
+    @articles = Article.all
+  end
+
+  def show
+    @article = Article.find(params[:id])
+  end
+end
+```
+
+Create `app/views/articles/show.html.erb` and add the following.
+
+```erb
+<h1><%= @article.title %></h1>
+
+<p><%= @article.body %></p>
+```
+
+Edit `app/views/articles/index.html.erb` and add the following.
+
+```erb
+<h1>My Blog: Articles</h1>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <a href="/articles/<%= article.id %>">
+        <%= article.title %>
+      </a>
+    </li>
+  <% end %>
+</ul>
+```
