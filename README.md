@@ -60,7 +60,9 @@ The following directories will be created and this is the explanation of what th
 | bin/ | Contains the `rails` script that starts your app and can contain other scripts you use to set up, update, deploy, or run your application. | 
 | config/ | Contains configuration for your application's routes, database, and more. This is covered in more detail in [Configuring Rails Applications](https://guides.rubyonrails.org/configuring.html). |
 | config.ru | Rack configuration for Rack-based servers used to start the application. For more information about Rack, see the [Rack website](https://rack.github.io/). |
-| db/ | Contains your current database schema, as well as the database migrations. 
+| db/ | Contains your current database schema, as well as the database migrations. |
+| Dockerfile | Contains the Dockerfile and container requirements for your application. |
+| docker-compose.yml | Contains instructions on how to run your application in a Docker container using Docker Compose. |
 | Gemfile & Gemfile.lock | These files allow you to specify what gem dependencies are needed for your Rails application. These files are used by the Bundler gem. For more information about Bundler, see the [Bundler website](https://bundler.io). |
 | lib/ | Extended modules for your application. |
 | log/ | Application log files. |
