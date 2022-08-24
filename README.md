@@ -8,8 +8,10 @@ This project is to teach myself Ruby on Rails. I am using Ubuntu in WSL2 (Window
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Installation](#installation)
-- [Running the Application](#running-the-application)
+- [My Rails Tutorial](#my-rails-tutorial)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+  - [Docker](#docker)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -96,3 +98,13 @@ bin/rails server
 ```
 
 This starts the Puma web server on port 3000. Navigate to [localhost:3000](http://localhost:3000) to see the application.
+
+## Docker
+
+We can run this application in a Docker container using Docker Compose. If you don't have Docker installed please click [here](https://docs.docker.com/get-docker/) for the instructions.
+
+```bash
+docker-compose build
+docker-compose up # or if you want it in the background
+docker-compose up -d
+```
