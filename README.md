@@ -8,11 +8,12 @@ This project is to teach myself Ruby on Rails. I am using Ubuntu in WSL2 (Window
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Installation](#installation)
-- [Running the Application](#running-the-application)
-- [Docker](#docker)
-- [Screenshots](#screenshots)
-- [Todo](#todo)
+- [My Rails Tutorial](#my-rails-tutorial)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+  - [Docker](#docker)
+  - [Screenshots](#screenshots)
+  - [Todo](#todo)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -102,7 +103,7 @@ This starts the Puma web server on port 3000. Navigate to [localhost:3000](http:
 
 ## Docker
 
-[postgresql](https://hub.docker.com/_/postgres/) | [adminer](https://hub.docker.com/_/adminer/)
+[Ruby](https://hub.docker.com/_/ruby) | [PostgreSQL](https://hub.docker.com/_/postgres/) | [Adminer](https://hub.docker.com/_/adminer/)
 
 We can run this application in a Docker container using Docker Compose. If you don't have Docker installed please click [here](https://docs.docker.com/get-docker/) for the instructions.
 
