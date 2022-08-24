@@ -101,6 +101,8 @@ This starts the Puma web server on port 3000. Navigate to [localhost:3000](http:
 
 ## Docker
 
+[postgresql](https://hub.docker.com/_/postgres/) | [adminer](https://hub.docker.com/_/adminer/)
+
 We can run this application in a Docker container using Docker Compose. If you don't have Docker installed please click [here](https://docs.docker.com/get-docker/) for the instructions.
 
 ```bash
