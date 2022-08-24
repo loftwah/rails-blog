@@ -1,6 +1,6 @@
 # My Rails Tutorial
 
-[Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html) | [API](https://api.rubyonrails.org/) | [Awesome Ruby](https://github.com/markets/awesome-ruby) | [Awesome Rails](https://github.com/gramantin/awesome-rails)
+[Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html) | [API](https://api.rubyonrails.org/) | [Awesome Ruby](https://github.com/markets/awesome-ruby) | [Awesome Rails](https://github.com/gramantin/awesome-rails) | [More than "Hello World" in Docker: Build Rails + Sidekiq web apps in Docker](https://dev.to/raphael_jambalos/more-than-hello-world-in-docker-run-rails-sidekiq-web-apps-in-docker-1b37)
 
 ![Rails 7 Blog](assets/rails7blog.png)
 
@@ -10,11 +10,12 @@ This project is to teach myself Ruby on Rails. I am using Ubuntu in WSL2 (Window
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Installation](#installation)
-- [Running the Application](#running-the-application)
-- [Docker](#docker)
-- [Screenshots](#screenshots)
-- [Todo](#todo)
+- [My Rails Tutorial](#my-rails-tutorial)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+  - [Docker](#docker)
+  - [Screenshots](#screenshots)
+  - [Todo](#todo)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
