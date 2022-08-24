@@ -123,4 +123,4 @@ docker-compose up -d
 
 ## Todo
 
-- [] Add postgresql
+- [ ] Add postgresql
