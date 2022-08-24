@@ -1,5 +1,7 @@
 # My Rails Tutorial
 
+[Getting Started with Rails](https://guides.rubyonrails.org/getting_started.html) | [API](https://api.rubyonrails.org/) | [Awesome Ruby](https://github.com/markets/awesome-ruby) | [Awesome Rails](https://github.com/gramantin/awesome-rails)
+
 ![Rails 7 Blog](assets/rails7blog.png)
 
 This project is to teach myself Ruby on Rails. I am using Ubuntu in WSL2 (Windows Subsystem for Linux 2) and Ruby 2.7. This project requires Ruby and SQLite3. I will be using [this](https://guides.rubyonrails.org/getting_started.html) guide to get started.
