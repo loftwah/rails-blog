@@ -8,9 +8,8 @@ This project is to teach myself Ruby on Rails. I am using Ubuntu in WSL2 (Window
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [My Rails Tutorial](#my-rails-tutorial)
-  - [Installation](#installation)
-  - [Running the Application](#running-the-application)
+- [Installation](#installation)
+- [Running the Application](#running-the-application)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
