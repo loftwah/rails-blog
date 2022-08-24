@@ -1,6 +1,6 @@
 # My Rails Tutorial
 
-![Rails 7 Blog](rails7blog.png)
+![Rails 7 Blog](assets/rails7blog.png)
 
 This project is to teach myself Ruby on Rails. I am using Ubuntu in WSL2 (Windows Subsystem for Linux 2) and Ruby 2.7. This project requires Ruby and SQLite3. I will be using [this](https://guides.rubyonrails.org/getting_started.html) guide to get started.
 
@@ -8,9 +8,12 @@ This project is to teach myself Ruby on Rails. I am using Ubuntu in WSL2 (Window
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Installation](#installation)
-- [Running the Application](#running-the-application)
-- [Docker](#docker)
+- [My Rails Tutorial](#my-rails-tutorial)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+  - [Docker](#docker)
+  - [Screenshots](#screenshots)
+  - [Todo](#todo)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -109,3 +112,15 @@ docker-compose build
 docker-compose up # or if you want it in the background
 docker-compose up -d
 ```
+
+## Screenshots
+
+| Screenshot | Description |
+| ---------- | ----------- |
+| ![Rails 7 Blog](assets/blog-articles.png) | Blog Articles |
+| ![Rails 7 Blog](assets/read-article.png) | Read Article |
+| ![Rails 7 Blog](assets/adminer.png) | Adminer |
+
+## Todo
+
+- [] Add postgresql
