@@ -6,11 +6,10 @@ COPY Gemfile /blog/Gemfile
 COPY Gemfile.lock /blog/Gemfile.lock
 RUN gem install bundler
 RUN bundle install
-
+COPY . /blog
 # Add a script to be executed every time the container starts.
 COPY entrypoint.sh /usr/bin/
 RUN chmod +x /usr/bin/entrypoint.sh
-RUN rails db:migrate
 ENTRYPOINT ["entrypoint.sh"]
 EXPOSE 3000
 
