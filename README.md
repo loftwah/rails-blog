@@ -10,11 +10,13 @@ This project is to teach myself Ruby on Rails. I am using Ubuntu in WSL2 (Window
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-- [Installation](#installation)
-- [Running the Application](#running-the-application)
-- [Docker](#docker)
-- [Screenshots](#screenshots)
-- [Todo](#todo)
+- [My Rails Tutorial](#my-rails-tutorial)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+  - [Docker](#docker)
+  - [Screenshots](#screenshots)
+  - [Ruby examples](#ruby-examples)
+  - [Todo](#todo)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -121,6 +123,119 @@ docker-compose up -d
 | ![Rails 7 Blog](assets/blog-articles.png) | Blog Articles |
 | ![Rails 7 Blog](assets/read-article.png) | Read Article |
 | ![Rails 7 Blog](assets/adminer.png) | Adminer |
+
+## Ruby examples
+
+These are some examples of how to do things in Ruby.
+
+- basics
+
+```ruby
+"Dean" #=> String
+7         #=> Integer
+6.9       #=> Float
+[1,2,3]   #=> Array
+(1..10)   #=> Range
+false     #=> FalseClass (Boolean)
+true      #=> TrueClass (Boolean)
+nil       #=> NilClass
+name = "Dean"
+name.upcase
+# Print the result of 4 + 8 to the terminal
+puts 4 + 8
+puts name # "Dean" "DEAN"
+```
+
+- methods
+
+```ruby
+# DRY (Don't Repeat Yourself)!!!!!
+# puts "Hello Dean, how are you?"
+# puts "Hello Scott, how are you?"
+# puts "Hello Stephanie, how are you?"
+# puts "Hello Luke, how are you?"
+# method definition (the code inside WON'T RUN until the method is called!)
+# def greet_person
+#   puts "HI!"
+# end
+# DRY method with one parameter (name)
+def greet_student(name)
+  puts "Hello #{name}, how are you today? :)"
+end
+# we ommit the () characters if we don't have arguments!
+# greet_person
+# greet_person
+# we're calling the method greet_student with the ARGUMENT 'Dean'
+greet_student('Dean')
+greet_student('Scott')
+greet_student('Stephanie')
+greet_student('Luke')
+def full_name(first_name, last_name)
+  first_name = first_name.capitalize
+  last_name = last_name.capitalize
+  return "#{first_name} #{last_name}"
+end
+# full_name is returning nil!
+name = full_name('deAn', 'loFtS')
+puts name
+def max(number_1, number_2)
+  return 0 if number_1 == number_2
+  if number_1 > number_2
+    return number_1
+  else
+    return number_2
+  end
+end
+maximum = max(5, 6) # => 6
+puts maximum # => 6
+def upcased_name(name)
+  5 + 6
+  new_name = name.downcase
+  # return new_name
+  name.upcase
+end
+upcased = upcased_name('dean')
+puts upcased
+def stupid_method
+end
+result = puts('Dean')
+puts result
+require 'date'
+def tomorrow
+  tomorrow_date = Date.today + 1
+  return tomorrow_date.strftime("%B %d")
+end
+puts tomorrow   # => "September 2"
+```
+
+- strings
+
+```ruby
+puts "Gday mate"
+puts 'Gday mate'
+name = 'Dean'
+age = 36
+# Concatenation of strings
+# puts 'Hello' + ' ' + name + ' ' + 'how are you?'
+puts 'You are' + ' ' + 36.to_s + ' ' + 'years old'
+# Interpolation of strings (needs double quotes!)
+# puts "Hello #{name} how are you?"
+puts "You are #{35 + 1} years old"
+```
+
+- variables
+
+```ruby
+# variable names should be lower snake case
+user_city = 'Melbourne'
+age = 36 # assigning a variable value
+age_in_four_years = age + 4
+age = age + 4 # re-assignment
+age += 4 # sugar syntax to age = age + 4
+puts age #=> 40
+age = 40 # re-assignment
+puts age #=> 40
+```
 
 ## Todo
 
